@@ -1,0 +1,19 @@
+footer {
+    background-color: black;
+    padding-bottom: 0px;
+    border-top: solid 1px white;
+    width: 100%;
+    position: absolute;
+  }
+  
+  footer div {
+    text-align: center;
+  }
+  
+  footer div ul {
+    margin-top: 1rem;
+  }
+  
+  footer div ul li {
+    display: inline;
+  }
