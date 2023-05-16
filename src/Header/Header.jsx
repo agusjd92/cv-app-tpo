@@ -25,7 +25,7 @@ const Header = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-40}
+            offset={-25}
             duration={300}
             className="my-link"
           >
