@@ -41,3 +41,7 @@
 ul.show {
   top: 85px;
 }
+
+.my-link{
+  cursor: pointer;
+}

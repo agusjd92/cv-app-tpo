@@ -2,6 +2,8 @@ import React from "react";
 import "./styles.css";
 import logo from "../logo.gif";
 import { Link } from "react-router-dom";
+import { Link as Link1, animateScroll as scroll } from 'react-scroll';
+
 
 const Header = () => {
   return (
@@ -16,6 +18,20 @@ const Header = () => {
           </li>
           <li>
             <Link to="/login">Login</Link>
+          </li>
+          <li>
+          <Link1
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={300}
+            className="my-link"
+          >
+            
+            Contact
+            </Link1>
           </li>
           <li>
             <Link to="/contact" >  Contact </Link>

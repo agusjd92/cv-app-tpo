@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import cvimg from "./../cvimg.webp";
+import Contact from "../Contact/Contact";
 
 const CardCv = () => {
   return (
@@ -345,11 +346,16 @@ const CardCv = () => {
                     </ul>
                   </div>
                 </div>
+                
               </article>
             </section>
           </div>
         </div>
+        
         <footer></footer>
+        <div id="contact">
+        <Contact />
+        </div>
       </div>
     </div>
   );
