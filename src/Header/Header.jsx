@@ -14,7 +14,7 @@ const Header = () => {
         </a>
         <ul className="menu_items">
           <li className="active">
-            <Link to= "/">Home</Link>
+            <Link to= "/">HomeBORRAR</Link>
           </li>
           <li>
             <Link to="/login">Login</Link>
@@ -26,7 +26,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             offset={-25}
-            duration={300}
+            duration={100}
             className="my-link"
           >
             
