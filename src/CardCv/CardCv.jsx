@@ -15,30 +15,7 @@ const CardCv = () => {
               </article>
               <article class="info">
                 <p class="name"></p>
-                <p class="role">Front-End Developer</p>
-              </article>
-              <article class="contact">
-                <h2 class="title">Contact</h2>
-                <ul class="content-info">
-                  <li>
-                    <strong>D.</strong>March 11, 1992
-                  </li>
-                  <li>
-                    <strong>T.</strong>0352730552
-                  </li>
-                  <li>
-                    <strong>M.</strong>trinhnta1103@gmail.com
-                  </li>
-                  <li>
-                    <strong>L.</strong>Ho Chi Minh, Viet Nam
-                  </li>
-                  <li>
-                    <strong>P.</strong>
-                    <a href="">
-                      Linkedin
-                    </a>
-                  </li>
-                </ul>
+                <p class="role role-style">Front-End Developer</p>
               </article>
               <article class="skills">
                 <h2 class="title">Skills</h2>
@@ -84,7 +61,7 @@ const CardCv = () => {
           <div class="col-8">
             <section class="section__right">
               <article class="objective">
-                <h2 class="title">Objective</h2>
+                <h2 class="title title-cv">Objective</h2>
                 <p class="content-info">
                   I’m a Front End Developer with 5 years experience building and
                   maintaining responsive websites and applications. I specialize
@@ -97,7 +74,7 @@ const CardCv = () => {
               </article>
 
               <article class="technical">
-                <h2 class="title">TECHNICAL</h2>
+                <h2 class="title title-cv">TECHNICAL</h2>
                 <div class="content-info">
                   <h4 class="subtitle">Development</h4>
                   <ul class="list-tech">
@@ -149,7 +126,7 @@ const CardCv = () => {
               </article>
 
               <article class="experience">
-                <h2 class="title">Experience</h2>
+                <h2 class="title title-cv">Experience</h2>
                 <div class="content-info">
                   <div class="experience__item">
                     <h3 class="experience__role">

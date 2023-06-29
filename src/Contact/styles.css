@@ -60,15 +60,16 @@ body {
   
   .send-button {
     margin-top: 15px;
-    height: 34px;
+    height: 44px;
     width: 400px;
     overflow: hidden;
     transition: all .2s ease-in-out;
+    background-color: rgb(31, 21, 172);
   }
   
   .alt-send-button {
-    width: 400px;
-    height: 34px;
+    width: auto;
+    height: auto;
     transition: all .2s ease-in-out;
   }
   

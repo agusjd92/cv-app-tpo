@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    background: #1D1D1D;
+    background: rgb(0, 99, 99); 
     color: #FAFAFA;
 }
 .navbar-logo{

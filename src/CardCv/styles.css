@@ -17,21 +17,30 @@ h1, h2, h3 {
 .title {
   margin-top: 4rem;
   
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 
 }
-
-
+.subtitle{
+  font-size:1.5rem;
+  padding-top: 7px;
+}
+.title-cv{
+  font-size: 2.6rem;
+  border-bottom: 1px solid white;
+}
 ul {
   list-style-type: none;
 }
 .item{
   margin: -5px;
 }
-
+.experience__item{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
 .cv-page {
   max-width: 180rem;
   padding: 6rem 3rem;
@@ -121,12 +130,14 @@ ul {
   text-align: center;
   font-size: 1.4rem;
   color: teal;
+  
 }
 
 .content-info {
   margin-top: 1.5rem;
   
 }
+
 
 .list-item {
   display: flex;
@@ -230,7 +241,7 @@ ul {
   .subtitle {
     margin-left: 2rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     
     color: teal;
@@ -266,3 +277,13 @@ ul {
 .mt-4 {
   margin-top: 1.6rem;
 }}
+
+
+.role-style{
+  padding-top: 15px;
+  font-size: 2.2rem;
+  text-align: center;
+}
+.content-info{
+  margin-top: 5px;
+}
