@@ -17,24 +17,23 @@ h1, h2, h3 {
 .title {
   margin-top: 4rem;
   
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 
 }
 
-.main-text {
-
-}
 
 ul {
   list-style-type: none;
-  padding: 0;
+}
+.item{
+  margin: -5px;
 }
 
 .cv-page {
-  max-width: 114rem;
+  max-width: 180rem;
   padding: 6rem 3rem;
 }
 
@@ -44,6 +43,13 @@ ul {
   
   width: 100%;
   padding: 2rem;
+}
+
+.section__left{
+  background-color:  rgb(69, 74, 77, 0.7);
+  border-radius: 9%;
+  height: auto;
+  max-width: 40rem;
 }
 
 .avatar {
@@ -236,6 +242,10 @@ ul {
    
   }
 }
+.section__left{
+  background-color: red;
+ 
+}
 
 @media (max-width: 767px) {
   .cv-page {
@@ -245,13 +255,13 @@ ul {
   
   .section__left {
     padding-bottom: 0;
+    
   }
   
   .section__right {
     padding-top: 0;
   }
 }
-
 
 .mt-4 {
   margin-top: 1.6rem;

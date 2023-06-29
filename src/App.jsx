@@ -5,6 +5,8 @@ import Header from "./Header/Header";
 import Login from "./Login/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+
+
 function App() {
   return (
     <Router>
@@ -17,6 +19,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
+    
     </Router>
   );
 }

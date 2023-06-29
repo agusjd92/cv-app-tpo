@@ -1,100 +1,10 @@
 import React from "react";
 import "./styles.css";
-import cvimg from "./../cvimg.webp";
-import Contact from "../Contact/Contact";
+
 
 const CardCv = () => {
   return (
     <div className="container-fluid jumbotron">
-      {/* <div className="presentation">
-        <img src={cvimg} className="img-cv img-fluid rounded-circle"></img>
-        <div className="imagen-cv roundedCircle"></div>
-        <div class="mh-header-info">
-          <div
-            class="mh-promo wow fadeInUp"
-            data-wow-duration="0.8s"
-            data-wow-delay="0.1s"
-          
-          >
-            <span>Hello I'm</span>
-          </div>
-
-          <h2
-            class="wow fadeInUp"
-            data-wow-duration="0.8s"
-            data-wow-delay="0.2s"
-            
-          >
-            Alex Johnson
-          </h2>
-          <h4
-            class="wow fadeInUp"
-            data-wow-duration="0.8s"
-            data-wow-delay="0.3s"
-            
-          >
-            Product Designer
-          </h4>
-
-          <ul>
-            <li
-              class="wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.4s"
-              
-            >
-              <i class="fa fa-envelope"></i>
-              <a href="mailto:">getemail@email.com</a>
-            </li>
-            <li
-              class="wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.5s"
-              
-            >
-              <i class="fa fa-phone"></i>
-              <a href="callto:">+12 986 987 7867</a>
-            </li>
-            <li
-              class="wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.6s"
-              
-            >
-              <i class="fa fa-map-marker"></i>
-              <address>37, Pollsatnd, New York, United State</address>
-            </li>
-          </ul>
-
-          <ul
-            class="social-icon"
-            data-wow-duration="0.8s"
-            data-wow-delay="0.7s"
-            
-          >
-            <li>
-              <a href="">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa fa-dribbble"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div> */}
       <div class="container-fluid cv-page">
         <div class="row">
           <div class="col-4">
@@ -160,19 +70,6 @@ const CardCv = () => {
                     <li class="item">Teamwork</li>
                   </ul>
                 </div>
-              </article>
-              <article class="education">
-                <h2 class="title">Education</h2>
-                <ul class="content-info">
-                  <li>
-                    <h3 class="main-text">Software Engineering </h3>
-                  </li>
-                  <li>
-                    <div class="mt-4">
-                      at FPT University - Bachelor's degree ( 2010-2014 )
-                    </div>
-                  </li>
-                </ul>
               </article>
               <article class="additional-info">
                 <h2 class="title">Languages</h2>
@@ -351,14 +248,12 @@ const CardCv = () => {
             </section>
           </div>
         </div>
-        
-        <footer></footer>
-        <div id="contact">
-        <Contact />
-        </div>
+
       </div>
     </div>
   );
+
+  
 };
 
 export default CardCv;

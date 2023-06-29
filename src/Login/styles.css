@@ -1,5 +1,6 @@
 body{
     background-color: black;
+
   }
   
   /* This is the project stylesheet */
@@ -126,6 +127,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 40vw;
+    
   }
   .content-container {
     display: flex;
@@ -204,8 +207,7 @@ body{
   .input-input:not(:last-of-type) {
     margin-bottom: 13px;
   }
-  .input-input {
-  }
+
   .login-btn {
     background-color: var(--gray-100);
     padding: 34px 38px;
@@ -283,3 +285,26 @@ body{
     line-height: var(--roboto-12-medium-line-height);
     color: rgba(255, 255, 255, 1);
   }
+
+
+
+
+.container-table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  
+}
+th{
+  text-align: center;
+}
+.container-table-son tr{
+  color: white;
+}
+.title-table, h1{
+  margin-bottom: 15px !important; 
+}
+
+
+
