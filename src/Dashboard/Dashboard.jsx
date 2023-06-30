@@ -11,14 +11,18 @@ const Dashboard = () => {
     axios
       .get("http://localhost:8080/message")
       .then((response) => {
-        // Manejar la respuesta exitosa
         setMessages(response.data.messages);
       })
       .catch((error) => {
-        // Manejar los errores
         console.error(error);
       });
   }, []);
+
+  const handleDelete = (index) => {
+    setMessages((prevMessages) => {
+      return prevMessages.filter((_, i) => i !== index);
+    });
+  };
 
   return (
     <div>
@@ -32,6 +36,7 @@ const Dashboard = () => {
                 <th scope="col">Nombre</th>
                 <th scope="col">Mail</th>
                 <th scope="col">Mensaje</th>
+                <th scope="col"></th>
               </tr>
             </MDBTableHead>
 
@@ -42,9 +47,10 @@ const Dashboard = () => {
                   <td>{item.name}</td>
                   <td>{item.email}</td>
                   <td>{item.message}</td>
-                  <td><button>
-                        <FaTimes />
-                      </button>
+                  <td>
+                    <button className="btn-delete" onClick={() => handleDelete(index)}>
+                      <FaTimes />
+                    </button>
                   </td>
                 </tr>
               ))}
