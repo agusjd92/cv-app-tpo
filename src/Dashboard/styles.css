@@ -1,0 +1,18 @@
+.container-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    
+  }
+  th{
+    text-align: center;
+  }
+  .container-table-son tr{
+    color: white;
+  }
+  .title-table, h1{
+    margin-bottom: 15px !important; 
+  }
+  
+  
