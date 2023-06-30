@@ -14,7 +14,7 @@ const CardCv = () => {
                 <div class="image"></div>
               </article>
               <article class="info">
-                <p class="name"></p>
+                <p class="role role-style">Agustin Diaz</p>
                 <p class="role role-style">Front-End Developer</p>
               </article>
               <article class="skills">

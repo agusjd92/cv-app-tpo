@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import { MDBTable, MDBTableHead, MDBTableBody } from "mdb-react-ui-kit";
 import axios from "axios";
+import { FaTimes } from 'react-icons/fa';
 
 const Dashboard = () => {
   const [messages, setMessages] = useState(null);
@@ -41,6 +42,10 @@ const Dashboard = () => {
                   <td>{item.name}</td>
                   <td>{item.email}</td>
                   <td>{item.message}</td>
+                  <td><button>
+                        <FaTimes />
+                      </button>
+                  </td>
                 </tr>
               ))}
             </MDBTableBody>
