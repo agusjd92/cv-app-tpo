@@ -57,7 +57,8 @@
 }
 
 .navbar-link li a:hover {
-    color: crimson;
+    color: rgb(0, 0, 0);
+    font-size: 3.2rem;
 }
 
 .toggle-button {
