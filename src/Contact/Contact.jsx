@@ -1,11 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
+import axios from "axios";
 
 const Contact = () => {
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const onChangeName =(event)=>{
-    console.log(event)
-  }
+  const onChangeName = (event) => {
+    const input = event.target.value;
+    setFormState({ ...formState, name: input });
+  };
+
+  const onChangeMessage = (event) => {
+    const input = event.target.value;
+    setFormState({ ...formState, message: input });
+  };
+
+  const onChangeEmail = (event) => {
+    const input = event.target.value;
+    setFormState({ ...formState, email: input });
+  };
+
+  const handleOnSubmit = () => {
+    if (
+      formState.email.length > 0 &&
+      formState.name.length > 0 &&
+      formState.message.length > 0
+    ) {
+      axios
+        .post("http://localhost:8080/message", formState)
+        .then((response) => {
+          console.log(response.data);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    } else {
+      alert("Ingrese todos los campos");
+    }
+  };
+
   return (
     <>
       <section id="contact">
@@ -21,9 +58,9 @@ const Contact = () => {
                   id="name"
                   placeholder="NAME"
                   name="name"
-                  value=""
                   required
-                  onChange={onChangeName()}
+                  onChange={onChangeName}
+                  value={formState.name}
                 />
               </div>
             </div>
@@ -36,7 +73,8 @@ const Contact = () => {
                   id="email"
                   placeholder="EMAIL"
                   name="email"
-                  value=""
+                  value={formState.email}
+                  onChange={onChangeEmail}
                   required
                 />
               </div>
@@ -48,6 +86,8 @@ const Contact = () => {
               placeholder="MESSAGE"
               name="message"
               required
+              onChange={onChangeMessage}
+              value={formState.message}
             ></textarea>
 
             <button
@@ -55,6 +95,7 @@ const Contact = () => {
               id="submit"
               type="submit"
               value="SEND"
+              onClick={handleOnSubmit}
             >
               <div class="alt-send-button">
                 <i class="fa fa-paper-plane"></i>
