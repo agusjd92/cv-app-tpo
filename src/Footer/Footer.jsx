@@ -11,7 +11,7 @@ const Footer = () => {
         <div class="row">
           <div class="col-sm-5 col-md-6">
             <h6>About</h6>
-            <p class="text-justify"> Im Batman.</p>
+            <p class="text-justify"> I'm a passionate front-end web developer with extensive experience in creating attractive and functional interfaces. Using my expertise in HTML, CSS, and JavaScript. I love exploring new technologies and staying updated with the latest design and development trends.Let's work together to bring your digital vision to life!.</p>
           </div>
           <div class="col-xs-4 col-md-3">
             <h6>Quick Links</h6>
@@ -23,7 +23,12 @@ const Footer = () => {
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="facebook" href="https://www.facebook.com/agustin.diaz.9047" target="blank"><i class="fa fa-facebook"></i></a></li>
+              <li>
+                <a class="facebook" href="https://www.facebook.com/agustin.diaz.9047" target="blank">
+                  <i class="fa fa-facebook">
+                    </i>
+                    </a>
+              </li>
               <li><a class="twitter" href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
               <li><a class="dribbble" href="#" target="blank"><i class="fa fa-envelope"></i></a></li>
               <li><a class="linkedin" href="https://www.linkedin.com/in/agusjd92/" target="blank"><i class="fa fa-linkedin"></i></a></li>
