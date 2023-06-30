@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles.css";
-
-
+import axios from "axios";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -11,20 +10,25 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Aquí puedes realizar la validación de las credenciales ingresadas.
-    // Por simplicidad, aquí asumiremos que el inicio de sesión es exitoso si el usuario ingresa "admin" como nombre de usuario y "password" como contraseña.
-    if (username === "" || password === "") {
-      alert("Campos vacíos. Por favor, ingrese su usuario y contraseña.");
-    } else if (username === "agus" && password === "123") {
-      setLoggedIn(true);
-    } else {
-      alert("Credenciales inválidas");
-    }
+    axios
+      .post("http://localhost:8080/login", {
+        userId: username,
+        password: password,
+      })
+      .then((response) => {
+        console.log(response.data);
+        setLoggedIn(true);
+      })
+      .catch((error) => {
+        console.error(error);
+        setLoggedIn(false)
+        alert("Credenciales invalidas")
+      });
   };
 
   if (isLoggedIn) {
     // Si el inicio de sesión fue exitoso, puedes redirigir a otra página o mostrar el contenido deseado.
-    
+
     navigate("/dashboard");
   }
 
@@ -66,7 +70,5 @@ const Login = () => {
     </div>
   );
 };
-
-
 
 export default Login;
