@@ -29,8 +29,8 @@ const Footer = () => {
                     </i>
                     </a>
               </li>
-              <li><a class="twitter" href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#" target="blank"><i class="fa fa-envelope"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/home?lang=es" target="blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="https://outlook.live.com/mail/0/" target="blank"><i class="fa fa-envelope"></i></a></li>
               <li><a class="linkedin" href="https://www.linkedin.com/in/agusjd92/" target="blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
