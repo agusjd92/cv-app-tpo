@@ -50,6 +50,7 @@ const Contact = () => {
           console.error(error);
         });
     }
+    alert("Mensaje enviado correctamente!")
   };
 
   const validateEmail = (email) => {
@@ -145,25 +146,25 @@ const Contact = () => {
               </li>
             </ul>
 
-            <ul class="social-media-list">
+            <ul className="social-media-list">
               <li>
-                <a href="https://github.com/agusjd92" target="_blank" class="contact-icon">
-                  <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="https://www.linkedin.com/in/agusjd92/" target="_blank" className="contact-icon">
+                  <i className="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" className="contact-icon">
+                  <i className="fa fa-codepen" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/agusjd92" target="_blank" className="contact-icon">
+                  <i className="fa fa-twitter" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-codepen" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/agusjd92" target="_blank" class="contact-icon">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" class="contact-icon">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i className="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
