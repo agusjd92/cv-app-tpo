@@ -1,74 +1,56 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Documentación del Portfolio CV
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripcion del proyecto
 
-## Available Scripts
+El proyecto es una portfolio web en el que se trata de mostrar los conocimientos de desarrollador web de una forma simple y legible.Es una página web personal que muestra mi currículum vitae, proyectos realizados y habilidades, para los recruiters es una página web personal que muestra mi currículum vitae, proyectos realizados y habilidades. Ofrece la funcionalidad para los recruiters de que puedan comunicarse con el desarrollador dejando mensajes.
 
-In the project directory, you can run:
+## Uso del Portfolio CV
 
+- Home
+
+En la pagina de inicio se muestran y destacan los aspectos mas relevantes del profesional, su conocimiento, sus proyectos y experiencia.
+ 
+- Login
+
+Es la seccion en la cual el desarrollador se puede logear para revisar los mensajes de los recruiters que se comunicaron con el.
+
+- Contact
+
+La seccion para el recruiter tenga en vista todos los canales de comunicacion con la posibilidad de dejarle un mensaje.
+
+- Dashboard
+
+Seccion en la que luego de verificacion de credenciales, el desarrollador puede ver el dashboard con el nombre, mail y mensajes de las personas que se han comunicado
+
+## Configuracion del entorno local
+
+Si deseas ejecutar el Portfolio CV en tu entorno local, sigue estos pasos:
+1. Clona el repositorio del Portfolio CV desde GitHub.
+2. Asegúrate de tener instalado Node.js en tu máquina.
+3. Abre una terminal en la carpeta raíz del proyecto y ejecuta el siguiente comando para instalar las dependencias:
+### `npm install`
+4.Crea un archivo de configuración .env en la carpeta raíz del proyecto y proporciona la configuración necesaria, como las credenciales de la base de datos y la configuración del servidor.
+5.Ejecuta el siguiente comando para iniciar la aplicación en modo de desarrollo:
+Una vez logeado, el desarrollador tiene acceso al dashboard en el que se le presenta el nombre, el mail y los mensajes de los recruiters que se han comunicado.
 ### `npm start`
+6.Accede a http://localhost:3000 en tu navegador para ver el Portfolio CV en tu entorno local.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+El Portfolio CV se ha desarrollado utilizando las siguientes tecnologías:
 
-### `npm test`
+- React.js: Biblioteca de JavaScript para construir interfaces de usuario interactivas.
+- Node.js: Entorno de ejecución de JavaScript en el servidor.
+- Express: Marco de aplicaciones web para Node.js.
+- MongoDB: Base de datos NoSQL para almacenar los mensajes de los reclutadores.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Librerias usadas:
+- mdb-react-ui-kit
+- axios
+- react-icons
+- react-router-dom
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
 # cv-app-tpo
 >>>>>>> main
