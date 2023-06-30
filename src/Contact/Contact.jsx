@@ -148,22 +148,22 @@ const Contact = () => {
 
             <ul className="social-media-list">
               <li>
-                <a href="https://www.linkedin.com/in/agusjd92/" target="_blank" className="contact-icon">
+                <a href="https://github.com/agusjd92" target="_blank" className="contact-icon">
                   <i className="fa fa-github" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="#" target="_blank" className="contact-icon">
+                <a href="https://codepen.io/" target="_blank" className="contact-icon">
                   <i className="fa fa-codepen" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/agusjd92" target="_blank" className="contact-icon">
+                <a href="https://twitter.com/home?lang=es" target="_blank" className="contact-icon">
                   <i className="fa fa-twitter" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="#" target="_blank" class="contact-icon">
+                <a href="https://www.instagram.com/agusjd92" target="_blank" class="contact-icon">
                   <i className="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>
