@@ -63,7 +63,7 @@ const CardCv = () => {
               <article class="objective">
                 <h2 class="title title-cv">Objective</h2>
                 <p class="content-info">
-                  I’m a Front End Developer with 5 years experience building and
+                  I’m a Front End Developer with 2 years experience building and
                   maintaining responsive websites and applications. I specialize
                   in HTML(5), CSS(3), JavaScript, jQuery, Bootstrap, Sass/Less,
                   Vuejs. I have good attitude, hard-working and non-stop effort.
