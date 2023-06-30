@@ -130,7 +130,7 @@ const Contact = () => {
             <ul class="contact-list">
               <li class="list-item">
                 <i class="fa fa-map-marker fa-2x">
-                  <span class="contact-text place">Buenos Aires</span>
+                  <span class="contact-text place">Argentina, Buenos Aires</span>
                 </i>
               </li>
 
