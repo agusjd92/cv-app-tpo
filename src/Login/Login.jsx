@@ -13,7 +13,9 @@ const Login = () => {
   const handleLogin = () => {
     // Aquí puedes realizar la validación de las credenciales ingresadas.
     // Por simplicidad, aquí asumiremos que el inicio de sesión es exitoso si el usuario ingresa "admin" como nombre de usuario y "password" como contraseña.
-    if (username === "agus" && password === "123") {
+    if (username === "" || password === "") {
+      alert("Campos vacíos. Por favor, ingrese su usuario y contraseña.");
+    } else if (username === "agus" && password === "123") {
       setLoggedIn(true);
     } else {
       alert("Credenciales inválidas");

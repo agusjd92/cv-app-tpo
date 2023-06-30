@@ -35,7 +35,7 @@ const Footer = () => {
         <div class="row">
           <div class="col-md-7 col-sm-6 col-xs-12">
             <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
-              <a href="#">JulianAguero</a>.
+              <a href="#">JulianAguero & AgustinDiaz</a>.
             </p>
           </div>
         </div>

@@ -23,8 +23,8 @@ const Dashboard = () => {
     <div>
       <div className="container-table">
         <div className="container-table-son">
-          <h1 className="title-table">Bienvenido al Dashboard</h1>
-          <MDBTable>
+          <h1 className="title-table">Welcome to the dashboard</h1>
+          <MDBTable className="tablita">
             <MDBTableHead dark>
               <tr>
                 <th scope="col">#</th>

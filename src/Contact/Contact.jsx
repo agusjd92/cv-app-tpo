@@ -24,23 +24,44 @@ const Contact = () => {
     setFormState({ ...formState, email: input });
   };
 
-  const handleOnSubmit = () => {
+  const handleOnSubmit = (event) => {
+    event.preventDefault();
+
     if (
-      formState.email.length > 0 &&
-      formState.name.length > 0 &&
-      formState.message.length > 0
+      formState.name.length === 0 ||
+      formState.email.length === 0 ||
+      formState.message.length === 0
     ) {
+      alert("Por favor, complete todos los campos.");
+    } else if (!validateEmail(formState.email)) {
+      alert("Por favor, ingrese un correo electrónico válido.");
+    } else {
       axios
         .post("http://localhost:8080/message", formState)
         .then((response) => {
           console.log(response.data);
+          setFormState({
+            name: "",
+            email: "",
+            message: "",
+          });
         })
         .catch((error) => {
           console.error(error);
         });
-    } else {
-      alert("Ingrese todos los campos");
     }
+  };
+
+  const validateEmail = (email) => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const allowedDomains = ["gmail.com", "yahoo.com", "hotmail.com"];
+
+    if (emailPattern.test(email)) {
+      const domain = email.split("@")[1];
+      return allowedDomains.includes(domain);
+    }
+
+    return false;
   };
 
   return (
