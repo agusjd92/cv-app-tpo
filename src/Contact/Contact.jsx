@@ -49,17 +49,16 @@ const Contact = () => {
         .catch((error) => {
           console.error(error);
         });
+        alert("Mensaje enviado correctamente!")
     }
-    alert("Mensaje enviado correctamente!")
+   
   };
 
   const validateEmail = (email) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const allowedDomains = ["gmail.com", "yahoo.com", "hotmail.com"];
 
     if (emailPattern.test(email)) {
-      const domain = email.split("@")[1];
-      return allowedDomains.includes(domain);
+      return true
     }
 
     return false;

@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import { MDBTable, MDBTableHead, MDBTableBody } from "mdb-react-ui-kit";
 import axios from "axios";
-import { FaTimes } from 'react-icons/fa';
+import { FaTimes } from "react-icons/fa";
 
 const Dashboard = () => {
-  const [messages, setMessages] = useState(null);
-
+  const [messages, setMessages] = useState([]);
   useEffect(() => {
     axios
       .get("http://localhost:8080/api/message")
@@ -18,10 +17,18 @@ const Dashboard = () => {
       });
   }, []);
 
-  const handleDelete = (index) => {
+  const handleDelete = (id) => {
     setMessages((prevMessages) => {
-      return prevMessages.filter((_, i) => i !== index);
+      return prevMessages.filter((item) => item._id !== id);
     });
+    axios
+      .delete(`http://localhost:8080/api/message?id=${id}`)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
@@ -41,14 +48,17 @@ const Dashboard = () => {
             </MDBTableHead>
 
             <MDBTableBody>
-              {messages?.map((item, index) => (
-                <tr key={index}>
+              {messages?.map((item) => (
+                <tr key={item.id}>
                   <th scope="row">{item.id}</th>
                   <td>{item.name}</td>
                   <td>{item.email}</td>
                   <td>{item.message}</td>
                   <td>
-                    <button className="btn-delete" onClick={() => handleDelete(index)}>
+                    <button
+                      className="btn-delete"
+                      onClick={() => handleDelete(item._id)}
+                    >
                       <FaTimes />
                     </button>
                   </td>
