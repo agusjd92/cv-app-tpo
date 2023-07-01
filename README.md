@@ -50,7 +50,13 @@ Librerias usadas:
 - react-icons
 - react-router-dom
 
+## Reporte de errores
+- Boton "Enter" en la seccion login no esta funcionando el responsive.
+- Cuadro de skills cuando se achica mucho no funciona correctamente.
 
-
+## Endpoints
+- Link para la verificacion endpoints en postman: https://documenter.getpostman.com/view/17094074/2s93zB6hcY
+- 
+## Grupo 35, Julian Aguero y Agustin Diaz
 # cv-app-tpo
 >>>>>>> main
