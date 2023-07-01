@@ -11,7 +11,7 @@ const Login = () => {
 
   const handleLogin = () => {
     axios
-      .post("http://localhost:8080/login", {
+      .post("http://localhost:8080/api/login", {
         userId: username,
         password: password,
       })

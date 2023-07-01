@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/message")
+      .get("http://localhost:8080/api/message")
       .then((response) => {
         setMessages(response.data.messages);
       })

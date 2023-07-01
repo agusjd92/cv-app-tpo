@@ -37,7 +37,7 @@ const Contact = () => {
       alert("Por favor, ingrese un correo electrónico válido.");
     } else {
       axios
-        .post("http://localhost:8080/message", formState)
+        .post("http://localhost:8080/api/message", formState)
         .then((response) => {
           console.log(response.data);
           setFormState({
